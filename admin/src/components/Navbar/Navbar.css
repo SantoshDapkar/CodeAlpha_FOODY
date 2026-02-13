@@ -1,0 +1,29 @@
+*{
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4%;
+}
+
+.navbar .logo {
+    width: max(10%, 250px);
+
+    cursor: pointer;
+}
+
+.navbar .profile {
+    width: 30px;
+    /* cursor: pointer; */
+}
+
+.login-conditon {
+    font-size: 25px;
+    cursor: pointer; 
+ 
+}
+.login-conditon:hover{
+    color: red;
+}

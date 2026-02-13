@@ -1,0 +1,253 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.navbar .logo {
+    width: 180px;
+    text-decoration: underline;
+}
+
+/* MENU */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+
+/* RIGHT SIDE */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+/* ACTIVE LINK */
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+/* CART DOT */
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+/* PROFILE DROPDOWN */
+.navbar-profile {
+    position: relative;
+}
+.navbar-profile:hover {
+    cursor: pointer;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    outline: 2px solid white;
+    list-style: none;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+}
+
+.nav-profile-dropdown li:hover {
+    color: purple;
+}
+
+/* ------------------------------------ */
+/*        LARGE SCREENS (2K / 4K)       */
+/* ------------------------------------ */
+@media (min-width: 1600px) {
+    .navbar .logo {
+        width: 220px;
+    }
+    .navbar-menu {
+        font-size: 20px;
+        gap: 30px;
+    }
+    .navbar-right {
+        gap: 50px;
+    }
+    .navbar button {
+        padding: 12px 35px;
+        font-size: 18px;
+    }
+}
+
+/* ------------------------------------ */
+/*           LARGE LAPTOPS              */
+/* ------------------------------------ */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+/* ------------------------------------ */
+/*             TABLETS                  */
+/* ------------------------------------ */
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+/* ------------------------------------ */
+/*          SMALL MOBILE SCREENS        */
+/* ------------------------------------ */
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar-right {
+        gap: 15px;
+    }
+
+    .navbar-right button {
+        padding: 6px 18px;
+        font-size: 14px;
+    }
+
+    .navbar-search-icon img {
+        width: 18px;
+    }
+}
+
+/* ------------------------------------ */
+/*         EXTRA-SMALL DEVICES          */
+/* ------------------------------------ */
+@media (max-width: 450px) {
+    .navbar .logo {
+        width: 100px;
+    }
+
+    .navbar-right button {
+        padding: 5px 14px;
+        font-size: 13px;
+    }
+
+    .navbar-right img {
+        width: 16px;
+    }
+
+    .navbar-search-icon .dot {
+        min-width: 8px;
+        min-height: 8px;
+    }
+}
+
+/* ------------------------------------ */
+/*     ULTRA SMALL (320px phones)       */
+/* ------------------------------------ */
+@media (max-width: 350px) {
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar .logo {
+        width: 85px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+
+    .navbar-right button {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+}
